@@ -76,7 +76,7 @@ ENV MAVEN_HOME /usr/share/maven
 # Add normal user with passwordless sudo
 #========================================
 RUN useradd builder --shell /bin/bash --create-home \
-  && usermod -a -G sudo jenkins \
+  && usermod -a -G sudo builder \
   && echo 'ALL ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers \
   && echo 'builder:secret' | chpasswd
 
