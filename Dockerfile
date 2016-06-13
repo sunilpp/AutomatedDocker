@@ -25,7 +25,7 @@ RUN `# Creating user / Adjusting user permissions`                    &&       \
      software-properties-common                                                \
                                                                                \
     `# Adding bitcoin PPA`                                            &&       \
-     add-apt-repository -y ppa:bitcoin                                &&       \
+     add-apt-repository -y ppa:bitcoin                                 &&       \
                                                                                \
     `# Updating Package List`                                         &&       \
      DEBIAN_FRONTEND=noninteractive apt-get update                    &&       \
