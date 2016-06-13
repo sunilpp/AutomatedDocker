@@ -11,8 +11,8 @@ COPY Dockerfile /Dockerfile
 
 RUN `# Creating user / Adjusting user permissions`                    &&       \
      (groupadd -g 501 builder || true)                                &&       \
-     ((useradd -u 501 -g 501 -p builder -m builder) ||                         \
-      (usermod -u 501 builder && groupmod -g 501 builder))            &&       \
+     (useradd -u 501 -g 501 -p builder -m builder)                    &&       \
+     (usermod -u 501 builder && groupmod -g 501 builder)              &&       \
      mkdir -p /home/builder                                           &&       \
      chown -R builder:builder /home/builder /opt                      &&       \
                                                                                \
