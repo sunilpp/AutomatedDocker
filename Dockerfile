@@ -93,9 +93,9 @@ RUN wget -O - "http://cli.run.pivotal.io/stable?release=linux64-binary&source=gi
 RUN pip install awscli
 
 # compatibility with CloudBees AWS CLI Plugin which expects pip to be installed as user
-RUN mkdir -p /home/jenkins/.local/bin/ \
-  && ln -s /usr/bin/pip /home/jenkins/.local/bin/pip \
-  && chown -R jenkins:jenkins /home/jenkins/.local
+RUN mkdir -p /home/builder/.local/bin/ \
+  && ln -s /usr/bin/pip /home/builder/.local/bin/pip \
+  && chown -R builder:builder /home/builder/.local
 
 #====================================
 # NODE JS
