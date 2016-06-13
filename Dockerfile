@@ -111,9 +111,3 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | bash \
 RUN npm install --global grunt-cli@0.1.2 bower@1.7.9 gulp@3.9.1
 
 USER builder
-
-# for dev purpose
-# USER root
-
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
